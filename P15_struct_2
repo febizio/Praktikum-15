@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+
+struct motor {
+string merk;
+long tahun;
+string nopolisi;
+string warna;
+}mtr;
+void showinfomotor() {
+cout<<"Merk : "<<mtr.merk<<endl;
+cout<<"Tahun : "<<mtr.tahun<<endl;
+cout<<"No Polisi : "<<mtr.nopolisi<<endl;
+cout<<"warna : "<<mtr.warna<<endl;
+        };
+int main() {
+cout<<"merk = "; getline(cin,mtr.merk);
+cout<<"tahun = "; cin>>mtr.tahun;
+cout<<"nopolisi = "; cin>>mtr.nopolisi;
+cout<<"warna = "; cin>>mtr.warna;
+motor M;
+showinfomotor();
+return 0;
+}
