@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+
+struct laporan {
+int nim;
+string nama ;
+int nope;
+double tugas;
+double uts;
+double uas;
+double quiz;
+}mahasiswa;
+void infomahasiswa() {
+cout<<"NIM : "<<mahasiswa.nim<<endl;
+cout<<"NAMA : "<<mahasiswa.nama<<endl;
+cout<<"No TELEPON : "<<mahasiswa.nope<<endl;
+cout<<"NILAI TUGAS : "<<mahasiswa.tugas<<endl;
+cout<<"NILAI UTS : "<<mahasiswa.uts<<endl;
+cout<<"NILAI UAS : "<<mahasiswa.uas<<endl;
+cout<<"NILAI QUIZ : "<<mahasiswa.quiz<<endl;
+};
+int main() {
+    double nilai_akhir;
+cout<<"NIM : "; cin>>mahasiswa.nim;
+cout<<"NAMA : "; cin>>mahasiswa.nama;
+cout<<"No TELEPON : "; cin>>mahasiswa.nope;
+cout<<"NILAI TUGAS : ";cin>>mahasiswa.tugas;
+cout<<"NILAI UTS : "; cin>>mahasiswa.uts;
+cout<<"NILAI UAS : "; cin>>mahasiswa.uas;
+cout<<"NILAI QUIZ : "; cin>>mahasiswa.quiz;
+laporan M;
+infomahasiswa();
+nilai_akhir=(mahasiswa.uas*0.25)+(mahasiswa.uts*0.25)+(mahasiswa.tugas*0.3)+(mahasiswa.quiz*0.2);
+cout<<"Nilai akhir = "<<nilai_akhir;
+return 0;
+}
