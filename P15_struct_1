@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+struct motor {
+char* merk;
+long tahun;
+char* nopolisi;
+char* warna;
+public:
+        void setmotor (){
+        merk = "Honda GL Pro";
+        tahun = 1997;
+        nopolisi = "G 5879 BF";
+        warna = "hitam";
+        }
+        void showinfomotor() {
+        cout<<"Merk : "<<merk<<endl;
+        cout<<"Tahun : "<<tahun<<endl;
+        cout<<"No Polisi : "<<nopolisi<<endl;
+        cout<<"warna : "<<warna<<endl;
+        }
+};
+int main() {
+motor M;
+M.setmotor();
+M.showinfomotor();
+return 0;
+}
